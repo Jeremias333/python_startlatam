@@ -4,11 +4,11 @@ result = 0
 
 def choice():
     print("Responda com 'sim' ou 'nao'\n\n\n")
-    choice = input("Vamos converter C para F?")
+    choice = input("Vamos converter °C para °F?")
     if choice == 'sim':
         c_to_f()
     elif choice == 'nao':
-        print("Vamos converter F para C?")
+        choice = input("Vamos converter °F para °C?")
         if choice == 'sim':
             f_to_c()
         elif choice == 'nao':
@@ -18,18 +18,23 @@ def choice():
         print("Algumas escolhas devem ser feitas!")
         choice()
 
-def main():
+def main():#método inicial.
     choice()
 
 def c_to_f():
-    fahrenheit = input("Qual o Fahrenheit agora? ")
-    fahrenheit = float(fahrenheit.replace(",","."))
-    #calculo
-    result = (fahrenheit-32)/9 
-def f_to_c():
     celsius = input("Qual o Celsius agora? ")
-    celsius = float(celsius.replace(",","."))
+    celsius = int(celsius.replace(",","."))
+    
     #calculo
+    result = int(((celsius/5)*9)+(32))
+    print(f"{celsius}°C em Fahrenheit é: {result}°F")
+
+def f_to_c():
+    fahrenheit = input("Qual o Fahrenheit agora? ")
+    fahrenheit = int(fahrenheit.replace(",","."))
+    #calculo
+    result = (((fahrenheit - 32)/9)*5)
+    print(f"{fahrenheit}°F em Celsius é: {result:.0f}°C")
 
 def yesornot(alt):
     if alt != 'sim' and alt != 'nao':
