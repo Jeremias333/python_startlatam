@@ -3,14 +3,14 @@ Galera alguém pode me ajudar com as questões abaixo? Preciso resolver esses pr
 Responde no Privado
 Apenas por diversão, nada obrigatório
 
-1- Como faço pra imprimir o valor 10.523 com apenas duas casas decimais ?
+1- Como faço pra imprimir o valor 10.523 com apenas duas casas decimais ? v
 
-2- Como calcular a raíz quadrada de 8?
+2- Como calcular a raíz quadrada de 8? v
 
-3- Como calcular a exponenciação 5^4 ?
+3- Como calcular a exponenciação 5^4 ? v
 
-4- Como pego a parte inteira da divisão 10.25?
+4- Como pego a parte inteira da divisão 10.25? v
 
-6- Como pego a parte decimal do valor 10.25?
+6- Como pego a parte decimal do valor 10.25? v
 
-7- Qual o resultado da expressão 2 + 2 * 2?
+7- Qual o resultado da expressão 2 + 2 * 2? v
