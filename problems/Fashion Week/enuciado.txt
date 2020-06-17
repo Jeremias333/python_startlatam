@@ -1,0 +1,30 @@
+Desafio Fashion:
+Pessoal, comecei a trabalhar na Fashion Week Olinda e preciso de um programa para identificar
+qual a estação do ano atual.
+
+Responde no Privado
+Apenas por diversão, nada obrigatório
+Responder apenas se não for impactar as atividades planejadas
+A Questão aborda if, elif, else, input, variável, print e while 
+
+As estações do ano no Brasil:
+Quando começa o outono: 20 de março. Quando acaba o outono: 21 de junho.
+Quando começa o inverno: 21 de junho. Quando acaba o inverno: 23 de setembro.
+Quando começa a primavera: 23 de setembro. Quando acaba a primavera: 22 de dezembro.
+Quando começa o verão: 21 de dezembro.
+
+Requisitos:
+-O programa recebe o dia e o mês e vai imprimir a estação do ano atual.
+
+Exemplo:
+entrada dia: 22
+entrada mês: 03
+
+saída>> É Outono
+
+
+Bônus
+Meu Deus!! Nem entregamos o programa e o cliente já exige a seguinte validação:
+Requisitos Bônus:
+- O Mês informado precisa existir e enquanto (while) não existir, informar que é um mês inválido e solicitar
+que seja digitado novamente o mês OU 0 para sair do programa.
