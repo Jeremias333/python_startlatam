@@ -25,8 +25,8 @@ while(_pass == 0):
     day = int(input("Digite o dia: "))
     month = int(input("Digite o mês: "))
 
-    if(day >= 1 and day <= 31): #conferida base
-        if(month >= 1 and month <= 12): #conferida base
+    if(day >= 1 and day <= 31): #seleção básica
+        if(month >= 1 and month <= 12): #seleção básica
             if(month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12): #meses com 31 dias
                 calc_season(day, month)
                 break
