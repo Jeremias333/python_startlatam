@@ -1,11 +1,11 @@
 def calc_season(day, month):
-    if((month == 3 and day >=20) or (month >= 4 and day <= 31) or (month == 6 and day <= 20)):
+    if((month == 3 and day >= 20) or (month >= 4 and day <= 31) or (month == 6 and day <= 20)):
         print(f"Estamos no {OUT}")
     if((month == 6 and day >= 21) or (month >= 7 and day <= 31) or (month == 9 and day <= 22)):
         print(f"Estamos no {INV}")
-    if(month >= 9 and day >= 23 and month <= 12 and day <= 24):
+    if((month == 9 and day >= 23) or (month >= 10 and day <= 31) or (month == 12 and day <= 21)):
         print(f"Estamos na {PRI}")
-    if((month == 12 and day >= 25) or (month == 1 and day >= 1) or (month == 3 and day <= 19) or (month == 2 and day <= 29)):
+    if((month == 12 and day >= 22) or (month == 1 and day >= 1) or (month == 3 and day <= 19) or (month == 2 and day <= 29)):
         print(f"Estamos no {VER}")
     _pass = 1
 
