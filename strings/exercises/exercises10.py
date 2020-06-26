@@ -112,43 +112,43 @@ if(num >= 20 and num <= 99):
         if(algarism[1] == 0):
             print(twenty)
         else:
-            print(twenty," e ", algarism_func(algarism[1])
+            print(twenty,"e", algarism_func(algarism[1]))
     elif(algarism[0] == 3 and algarism[1] <= 9):
         if(algarism[1] == 0):
             print(threrty)
         else:
-            print(threrty," e ", algarism_func(algarism[1])
+            print(threrty,"e", algarism_func(algarism[1]))
 
     elif(algarism[0] == 4 and algarism[1] <= 9):
         if(algarism[1] == 0):
             print(fourty)
         else:
-            print(fourty," e ", algarism_func(algarism[1])
+            print(fourty,"e", algarism_func(algarism[1]))
 
     elif(algarism[0] == 5 and algarism[1] <= 9):
         if(algarism[1] == 0):
             print(fifth)
         else:
-            print(fifth," e ", algarism_func(algarism[1])
+            print(fifth,"e", algarism_func(algarism[1]))
     elif(algarism[0] == 6 and algarism[1] <= 9):
         if(algarism[1] == 0):
             print(sixty)
         else:
-            print(sixty," e ", algarism_func(algarism[1])
+            print(sixty,"e", algarism_func(algarism[1]))
     elif(algarism[0] == 7 and algarism[1] <= 9):
         if(algarism[1] == 0):
             print(seventy)
         else:
-            print(seventy," e ", algarism_func(algarism[1])
+            print(seventy,"e", algarism_func(algarism[1]))
     elif(algarism[0] == 8 and algarism[1] <= 9):
         if(algarism[1] == 0):
             print(eighty)
         else:
-            print(eighty," e ", algarism_func(algarism[1])
+            print(eighty,"e", algarism_func(algarism[1]))
     elif(algarism[0] == 9 and algarism[1] <= 9):
         if(algarism[1] == 0):
             print(ninety)
         else:
-            print(ninety," e ", algarism_func(algarism[1])
+            print(ninety,"e", algarism_func(algarism[1]))
 else:
     print("fim")
