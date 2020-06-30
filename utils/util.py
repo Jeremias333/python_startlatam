@@ -6,5 +6,3 @@ def yesorno(res):#variável irá retornar
     else:
         val = "invalid"
     return val
-
-teste = "oi"
