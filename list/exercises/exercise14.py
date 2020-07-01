@@ -16,10 +16,10 @@ list_quest[1] = yesorno(quest)
 quest = input("Mora perto da vítima ?")
 list_quest[2] = yesorno(quest)
 
-quest = input("Telefonou para a vítima ?")
+quest = input("Devia para a vítima ?")
 list_quest[3] = yesorno(quest)
 
-quest = input("Telefonou para a vítima ?")
+quest = input("Já trabalhou com a vítima ?")
 list_quest[4] = yesorno(quest)
 
 print(list_quest)

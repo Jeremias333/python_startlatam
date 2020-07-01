@@ -5,3 +5,5 @@ def printRand(init, final):
 
 def randInt(init, final):
 	return random.randint(init, final)
+
+printRand(int(input("inicio: ")), int(input("final: ")))
