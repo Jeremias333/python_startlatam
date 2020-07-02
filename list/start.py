@@ -70,3 +70,8 @@ list_third = list_first[:]
 list_first.append("novo")
 print(list_first)
 print(list_third)
+
+
+A = [[1,4,0], [-2, 0, 1]]
+
+print(A[0][0])#matriz
