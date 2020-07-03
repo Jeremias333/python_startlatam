@@ -1,7 +1,14 @@
 #criação de classes.
 class MyFirstClass:
-    pass
+	def __init__:
+		year_act = 2020
 
+    #pass
+    @classmethod
+    def born_year(cls, name, ano_nasc):
+    	year = (cls.year_act - ano_nasc)
+    	return cls(name, year)
+    	
 a = MyFirstClass()
 
 print(a)
