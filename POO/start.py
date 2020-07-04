@@ -15,7 +15,7 @@ print(a)
 
 #class com atributo.
 class Point:
-    def __init__(self, x, y):#constructor
+    def __init__(self, x: int, y: int):#constructor
         pass
     def reset(self):#metodo para resetar
         self.x = 0
