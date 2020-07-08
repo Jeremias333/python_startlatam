@@ -1,0 +1,16 @@
+bomba_combustivel
+    |_ bomba
+        |_ id (10)
+        |_ tipo varchar(20)
+        |_ valor_litro decimal(5,3)
+        |_ quantidade_combustivel decimal(4,2)
+
+
+create table funcionarios(
+    id int(6) not null auto_increment,
+    nome varchar(30) not null,
+    funcao varchar(15) not null,
+    salario float(7,2),
+    
+    primary key (id)
+);
