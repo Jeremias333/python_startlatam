@@ -1,13 +1,24 @@
-import pymysql
+import mysql.connector
 
-connection = pymysql.connect(
+connection = mysql.connector.connect(
     host = "localhost",
     user = "root",
-    password = "root"
+    password = "root",
+    database = "empresa_chartos"
 )
 
-cursor = connection.cursor()
-cursor.execute("show databases")
+name = "Jeremias"
+function = "Segurança"
+salary = 1999.00
 
-for x in cursor:
-    print(x)
+sql = "insert into funcionarios (nome, funcao, salario) values (%s, %s, %s)"
+
+cursor = connection.cursor()
+val = (name, function, salary)
+cursor.execute(sql, val)
+
+connection.commit()
+
+print(cursor.rowcount)
+
+

@@ -1,15 +1,17 @@
-import pymysql
+import mysql.connector
 
 class ConnectFactory:
     def __init__(self):    
-        self.connection = pymysql.connect(
+        self.connection = mysql.connector.connect(    
             host = "localhost",
             user = "root",
-            password = "root"
+            password = "root",
+            database = "empresa_chartos"
         )
-        self.cursor = self.connection.cursor()
-        self.cursor.execute("use empresa_chartos")
         
-    def get_connection(self):
+    def get_cursor(self):
         self.cursor = self.connection.cursor()
         return self.cursor
+
+    def get_connection(self):
+        return self.connection 
