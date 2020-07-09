@@ -1,5 +1,5 @@
 class Funcionario:
-    def __init__(self, name:str, function:str, salary:float):
+    def __init__(self, name:str, function:str, salary:str):
         self.name = name
         self.function = function
         self.salary = salary
