@@ -49,12 +49,25 @@ class DaoFuncionario:
 		result = cursor.fetchone()
 		return result
 
-	def select_name_id(self, id):
+	def select_name_id_one(self, id):
 		self.sql = "select id, nome from funcionarios where id = %s"
 		val = (id, )
 		cursor.execute(self.sql, val)
 		result = cursor.fetchone()
 		return result
+
+	def select_name_id_all(self):
+		self.sql = "select id, nome from funcionarios"
+		cursor.execute(self.sql, )
+		result = cursor.fetchall()
+		return result
+
+	def select_id_exist(self, id):
+		self.sql = "select id from funcionarios where id = %s"
+		val = (id, )
+		cursor.execute(self.sql, val)
+		result = cursor.fetchone()
+		return cursor.rowcount
 
 	def pass_sql(self, sql):
 		cursor.execute(sql, )
