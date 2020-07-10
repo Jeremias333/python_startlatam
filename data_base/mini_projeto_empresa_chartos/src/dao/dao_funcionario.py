@@ -6,9 +6,10 @@ sys.path.append(path.join(path.dirname(__file__), '..'))#diretório relativo ace
 from dao.connect_factory import ConnectFactory
 from models.funcionario import Funcionario
 
-connect_factory = ConnectFactory()
+connect_factory = ConnectFactory()#instanciando.
+
 cursor = connect_factory.get_cursor()#conexão pertence agora a esta variável.
-con = connect_factory.get_connection()#para fazer commits finais no banco
+con = connect_factory.get_connection()#para fazer commits finais no banco.
 
 class DaoFuncionario:
 	def __init__(self):
