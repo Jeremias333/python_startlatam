@@ -3,10 +3,10 @@ import mysql.connector
 class ConnectFactory:
     def __init__(self):    
         self.connection = mysql.connector.connect(    
-            host = "localhost",
-            user = "root",
-            password = "root",
-            database = "empresa_chartos"
+            host = "sql10.freemysqlhosting.net",
+            user = "sql10353994",
+            password = "vkKAleExQA",
+            database = "sql10353994"
         )
         
     def get_cursor(self):
