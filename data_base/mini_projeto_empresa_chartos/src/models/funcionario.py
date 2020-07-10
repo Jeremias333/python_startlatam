@@ -1,8 +1,12 @@
 class Funcionario:
-    def __init__(self, name:str, function:str, salary:float):
+    def __init__(self, name:str="", function:str="", salary:float=0.0):
+        self.id = 0
         self.name = name
         self.function = function
         self.salary = salary
+
+    def get_id(self):
+        return self.id
 
     def get_name(self):
         return self.name
@@ -12,6 +16,9 @@ class Funcionario:
 
     def get_salary(self):
         return self.salary
+
+    def set_id(self, id:int):
+        self.id = id
 
     def set_name(self, name:str):
         self.name = name
