@@ -17,11 +17,14 @@ dao_funcionario = DaoFuncionario()
 #print(dao_funcionario.update_obj(funcionario_edit, 5))
 
 def list_employee():
-	for x in dao_funcionario.select_all():
-		print(str(x).strip("()"))
+    clear()
+    print("ID |      NOME      |      FUNÇÃO     |  SALÁRIO  ")
+    for x in dao_funcionario.select_all():
+        print(str(x).strip("()").replace(","," - "))
 
-	input("\nAperte Enter para voltar ao menu")
-	main_menu()
+    input("\nAperte [ENTER] para voltar ao menu: ")
+    clear()
+    main_menu()
 
 def add_employee():
 	funcionario = Funcionario()
