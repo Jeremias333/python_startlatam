@@ -29,7 +29,7 @@ class DaoFuncionario:
 		con.commit()
 		return cursor.rowcount
 
-	def update_obj(self, funcionario:Funcionario, id):
+	def update(self, funcionario:Funcionario, id):
 		self.sql = "update funcionarios set nome = %s, funcao = %s, salario = %s  where id = %s"
 		val = (funcionario.name, funcionario.function, funcionario.salary, id)
 		cursor.execute(self.sql, val)
