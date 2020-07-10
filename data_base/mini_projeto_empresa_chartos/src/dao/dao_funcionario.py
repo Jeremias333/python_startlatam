@@ -13,11 +13,11 @@ con = connect_factory.get_connection()#para fazer commits finais no banco.
 
 class DaoFuncionario:
 	def __init__(self):
-		pass
+		self.sql = ""
 
 	def add(self, funcionario:Funcionario):
-		sql = "insert into funcionarios (nome, funcao, salario) values (%s, %s, %s)"
+		self.sql = "insert into funcionarios (nome, funcao, salario) values (%s, %s, %s)"
 		val = (funcionario.name, funcionario.function, funcionario.salary)
-		cursor.execute(sql, val)
+		cursor.execute(self.sql, val)
 		con.commit()
 		#continue
