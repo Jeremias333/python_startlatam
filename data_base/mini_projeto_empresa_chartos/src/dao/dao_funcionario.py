@@ -20,4 +20,42 @@ class DaoFuncionario:
 		val = (funcionario.name, funcionario.function, funcionario.salary)
 		cursor.execute(self.sql, val)
 		con.commit()
-		#continue
+		return cursor.rowcount
+		
+	def delete_by_id(self, id):
+		self.sql = "delete from funcionarios where id = %s"
+		val = (id, )
+		cursor.execute(self.sql, val)
+		con.commit()
+		return cursor.rowcount
+
+	def update_obj(self, funcionario:Funcionario, id):
+		self.sql = "update funcionarios set nome = %s, funcao = %s, salario = %s  where id = %s"
+		val = (funcionario.name, funcionario.function, funcionario.salary, id)
+		cursor.execute(self.sql, val)
+		con.commit()
+		return cursor.rowcount
+
+	def select_all(self):
+		self.sql = "select * from funcionarios"
+		cursor.execute(self.sql)
+		result = cursor.fetchall()#passará todas linhas retornadas para result
+		return result
+
+	def select_id(self, id):
+		self.sql = "select * from funcionarios where id = %s"
+		val = (id, )
+		cursor.execute(self.sql, val)
+		result = cursor.fetchone()
+		return result
+
+	def select_name_id(self, id):
+		self.sql = "select id, nome from funcionarios where id = %s"
+		val = (id, )
+		cursor.execute(self.sql, val)
+		result = cursor.fetchone()
+		return result
+
+	def pass_sql(self, sql):
+		cursor.execute(sql, )
+		con.commit()
