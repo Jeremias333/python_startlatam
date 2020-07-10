@@ -28,11 +28,17 @@ def list_employee():
 
 def add_employee():
 	funcionario = Funcionario()
-	print("[NOVO USUÁRIO]")
+	clear()
+	print("[NOVO FUNCIONÁRIO]")
 	while(True):	
-		funcionario.set_name(input("Digite o nome do funcionário: "))
-		funcionario.set_function(input("Digite a função do funcionário: "))
-		funcionario.set_salary(input("Digite o salário do funcionário: "))
+	    funcionario.set_name(input("Digite o nome do funcionário: "))
+	    funcionario.set_function(input("Digite a função do funcionário: "))
+	    funcionario.set_salary(input("Digite o salário do funcionário: "))
+	    clear()
+	    if(dao_funcionario.add(funcionario)==1):
+	        return True
+	    else:
+	        return False
 
 		if(dao_funcionario.add(funcionario)):
 			print("Adicionado com sucesso!")
