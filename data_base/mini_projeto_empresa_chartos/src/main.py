@@ -1,6 +1,7 @@
 import sys
 from dao.dao_funcionario import DaoFuncionario
 from models.funcionario import Funcionario
+from utils.clear import clear
 
 funcionario = Funcionario("Jeremias", "Entregado", 1999.00)
 funcionario_edit = Funcionario("Jeremias", "Gerente Vendas", 3999.43)#objeto para usar em update
