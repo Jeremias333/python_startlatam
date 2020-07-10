@@ -1,0 +1,1 @@
+https://forum.sublimetext.com/t/terminal-in-sublime-not-as-new-tab/37866/5 - (terminal == vscode)
